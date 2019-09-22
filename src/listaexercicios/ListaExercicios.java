@@ -4,13 +4,18 @@
  * and open the template in the editor.
  */
 package listaexercicios;
+import java.time.*;
+import java.time.temporal.ChronoUnit;
 
 public class ListaExercicios {
 
     
     public static void main(String[] args) {
 
-        System.out.println();
+        LocalDate q = LocalDate.now();
+        
+        System.out.println(ChronoUnit.DAYS.between(q, q.plusYears(2)));
+      
         
         
     }

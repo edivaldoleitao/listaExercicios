@@ -6,6 +6,7 @@
 
 package listaexercicios;
 import java.time.*;
+import java.time.temporal.ChronoUnit;
 /**
  *
  * @author Win10
@@ -77,6 +78,13 @@ public class Funcionario {
         this.dataAdmissao = dataAdmissao;
     }
     
+    public long getTempoAdmissao() {
+        LocalDate agora = LocalDate.now();
+        return ChronoUnit.DAYS.between(agora, this.dataAdmissao);
+    }
+        
+    
+        
      
     
     
