@@ -22,7 +22,7 @@ public SistemaRH() {
     }
 
     public static void imprimirFolha(List<Funcionario> funcionario) {
-        System.out.println("Nome:\t\t\t\t Salario : \t\t\t\t Cargo :");
+        System.out.println("Nome:\t\tSalario :\tCargo :");
         for(Funcionario func : funcionario) {
             System.out.println(func.getNome() + "\t\t" + func.getSalario() + "\t\t" + func.getCargo());
         }
